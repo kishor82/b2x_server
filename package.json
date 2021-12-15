@@ -1,0 +1,25 @@
+{
+  "name": "b2x",
+  "version": "1.0.0",
+  "description": "b2x task",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.18.3",
+    "boom": "^7.3.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^2.0.2"
+  }
+}
